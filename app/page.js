@@ -72,7 +72,7 @@ export default function Index() {
           loader.remove();
           document.body.classList.remove("loading");
         });
-      }, 3000);
+      }, 2000);
 
       toggle.addEventListener("click", function () {
         document.body.classList.toggle("toggle");
