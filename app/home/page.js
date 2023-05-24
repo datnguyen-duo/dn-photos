@@ -71,6 +71,7 @@ export default async function Home() {
                 </div>
               ))}
           </main>
+
           <footer>
             <div className="inner">
               <a
