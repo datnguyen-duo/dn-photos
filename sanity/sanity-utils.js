@@ -4,7 +4,7 @@ export const client = createClient({
   projectId: "0p77p9q1",
   dataset: "production",
   apiVersion: "2023-05-05",
-  // useCdn: true,
+  useCdn: true,
 });
 
 export async function getPhotos() {
@@ -13,8 +13,6 @@ export async function getPhotos() {
         _id,
         _createdAt,
         "image": image.asset->url,
-        "x": image.hotspot.x,
-        "y": image.hotspot.y,
         "ratio": image.asset->metadata.dimensions.aspectRatio,
         location -> {
           slug
