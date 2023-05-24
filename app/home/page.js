@@ -82,7 +82,6 @@ export default async function Home() {
               </a>
             </div>
             <div className="inner">
-              <a href="mailto:hi@dn.photos">hi@dn.photos</a>—
               <a
                 href="https://www.instagram.com/dat.ngyn_/"
                 target="_blank"
