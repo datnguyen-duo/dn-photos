@@ -2,7 +2,7 @@ import Image from "next/image";
 import { getPhotos, getLocations, client } from "/sanity/sanity-utils";
 import imageUrlBuilder from "@sanity/image-url";
 
-export default async function Home({ mySanityData }) {
+export default async function Home() {
   const photos = await getPhotos();
   const locations = await getLocations();
   const sortLocations = locations.sort((a, b) => {
