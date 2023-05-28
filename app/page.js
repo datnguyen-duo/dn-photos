@@ -1,6 +1,6 @@
 "use client";
 import React, { useLayoutEffect, useRef } from "react";
-// import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
@@ -197,7 +197,7 @@ export default function Index() {
     <>
       <div id="app" ref={main}>
         <Home />
-        {/* <Analytics /> */}
+        <Analytics />
       </div>
     </>
   );
