@@ -273,6 +273,7 @@ img {
 
     @media screen and (max-width: 1024px) {
       grid-template-columns: repeat(2, 1fr);
+      padding: 5rem var(--gutter) calc(14vw + 5rem) var(--gutter);
     }
     .item-wrapper {
       .item {
@@ -311,7 +312,7 @@ img {
           transform: translateY(0);
         }
         &:nth-child(even) {
-          transform: translateY(7vw);
+          transform: translateY(14vw);
         }
       }
 
@@ -426,8 +427,8 @@ footer {
     height: 5vw;
     width: 5vw;
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: var(--gutter);
+    right: var(--gutter);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -456,18 +457,17 @@ footer {
   .container {
     overflow: auto;
     height: 100%;
-    padding: 2rem;
+    padding: var(--gutter);
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
   }
   .modal-image {
     width: 700px;
     height: 933px;
-    max-width: 90vw;
-    max-height: 106vw;
-
+    max-width: calc(100vw - var(--gutter));
+    max-height: calc(125vw - var(--gutter));
+    margin: auto;
     img {
       margin: 0 auto;
       height: 100%;
@@ -479,7 +479,7 @@ footer {
     .modal-image {
       width: 1200px;
       height: 900px;
-      max-height: 67.5vw;
+      max-height: calc(75vw - var(--gutter));
     }
   }
 }
