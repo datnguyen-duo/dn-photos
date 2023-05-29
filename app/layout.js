@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "chào",
+  title: "Dat Nguyen — Photo Album",
 };
 
 export default function RootLayout({ children }) {
