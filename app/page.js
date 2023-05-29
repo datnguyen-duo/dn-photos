@@ -147,6 +147,7 @@ export default function Index() {
       });
       filters.forEach((filter) => {
         filter.addEventListener("click", function () {
+          smoother.current.scrollTo(0, false);
           const state = Flip.getState(itemWrapper),
             location = filter.getAttribute("data-attribute-location");
           filters.forEach((filterClass) => {
@@ -168,10 +169,8 @@ export default function Index() {
           });
 
           Flip.from(state, {
-            duration: 0.7,
-            scale: true,
+            duration: 1,
             ease: "power1.inOut",
-            stagger: 0.02,
             absolute: true,
             onEnter: (elements) =>
               gsap.fromTo(

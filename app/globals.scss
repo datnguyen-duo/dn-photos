@@ -260,7 +260,7 @@ img {
     display: grid;
     gap: var(--gutter);
     grid-template-columns: repeat(5, 1fr);
-    padding: 4rem var(--gutter) calc(7vw + 5rem) var(--gutter);
+    padding: 4rem var(--gutter);
     width: 100%;
 
     @media screen and (max-width: 2000px) {
@@ -273,47 +273,11 @@ img {
 
     @media screen and (max-width: 1024px) {
       grid-template-columns: repeat(2, 1fr);
-      padding: 5rem var(--gutter) calc(14vw + 5rem) var(--gutter);
+      padding: 5rem var(--gutter);
     }
     .item-wrapper {
       .item {
         width: 100%;
-      }
-
-      &:nth-child(5n + 2),
-      &:nth-child(5n + 4),
-      &:nth-child(5n + 6) {
-        transform: translateY(7vw);
-      }
-
-      @media screen and (max-width: 2000px) {
-        &:nth-child(5n + 2),
-        &:nth-child(5n + 4),
-        &:nth-child(5n + 6) {
-          transform: translateY(0);
-        }
-
-        &:nth-child(even) {
-          transform: translateY(7vw);
-        }
-      }
-
-      @media screen and (max-width: 1536px) {
-        &:nth-child(even) {
-          transform: translateY(0);
-        }
-        &:nth-child(3n + 2) {
-          transform: translateY(7vw);
-        }
-      }
-
-      @media screen and (max-width: 1024px) {
-        &:nth-child(3n + 2) {
-          transform: translateY(0);
-        }
-        &:nth-child(even) {
-          transform: translateY(14vw);
-        }
       }
 
       &.active {
